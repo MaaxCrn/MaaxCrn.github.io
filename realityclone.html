@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RealityClone</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="site-wrapper">
+    <header class="header">
+      <div class="container header-container">
+        <a href="index.html" class="logo">Portfolio</a>
+        <nav class="desktop-nav">
+          <a href="index.html" class="nav-link">Accueil</a>
+          <a href="about.html" class="nav-link">À propos</a>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">
+            <i class="fas fa-sun sun-icon"></i>
+            <i class="fas fa-moon moon-icon"></i>
+          </button>
+        </nav>
+        <button class="mobile-menu-button" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <a href="index.html" class="back-link">
+            <i class="fas fa-arrow-left"></i> Retour à l'accueil
+          </a>
+          
+          <div class="project-detail">
+            <div class="project-info">
+                <h1 class="project-title">Reality Clone</h1>
+                <div class="tech-badges mb-4">
+                  <span class="badge">Flutter</span>
+                  <span class="badge">Unity</span>
+                  <span class="badge">Python</span>
+                  <span class="badge">TypeScript</span>
+                  <span class="badge">SQL</span>
+                  <span class="badge">API REST</span>
+                  <span class="badge">VR</span>
+                </div>
+                
+                <div class="project-section">
+                  <h2 class="project-section-title">Description du projet</h2>
+                  <p class="project-description">
+                    Reality Clone est un projet de recherche en équipe de quatre, centré sur l’exploration de la technologie du <strong>Gaussian Splatting</strong> pour la reconstruction 3D réaliste à partir de photographies. Le projet repose sur un pipeline complet allant de la capture à la visualisation immersive en réalité virtuelle.
+                  </p>
+                  <p class="project-description">
+                    Il se compose de trois parties : une application mobile Flutter permettant la prise de photos, un serveur de traitement qui convertit ces images en modèles 3D via un algorithme de Gaussian Splatting implémenté en Python, et enfin, une application Unity permettant de visualiser les modèles reconstruits en <strong>VR</strong>.
+                  </p>
+                </div>
+                
+                <div class="project-section">
+                  <h2 class="project-section-title">Fonctionnalités principales</h2>
+                  <ul class="project-features">
+                    <li>Application Flutter pour capturer une série d’images</li>
+                    <li>Serveur TypeScript/Node.js avec API REST et base de données SQL</li>
+                    <li>Traitement des images et génération des modèles 3D avec Gaussian Splatting en Python</li>
+                    <li>Stockage et gestion des modèles générés</li>
+                    <li>Visualisation en 3D et en VR dans une scène interactive via Unity</li>
+                    <li>Pipeline modulaire facilitant l’ajout de nouvelles étapes de traitement</li>
+                  </ul>
+                </div>
+                
+                <div class="project-section">
+                  <h2 class="project-section-title">Défis et solutions</h2>
+                  <p class="project-description">
+                    Le principal défi était d’intégrer des technologies très différentes dans un même projet. L’interopérabilité entre les modules Flutter, Python et Unity a nécessité une structuration claire du backend et une gestion rigoureuse des formats d’échange.
+                  </p>
+                  <p class="project-description">
+                    Un autre challenge résidait dans la compréhension et l’application du Gaussian Splatting, une technique récente de rendu 3D. Après une phase de recherche, nous avons réussi à l'adapter à notre pipeline de photogrammétrie pour produire des résultats exploitables en VR.
+                  </p>
+                </div>
+                
+                <div class="project-links">
+                  <a href="https://github.com/MaaxCrn/Reality-Clone" target="_blank" class="button outline">
+                    <i class="fab fa-github"></i> Code source
+                  </a>
+                </div>                
+            </div>
+            
+            <div class="project-gallery">
+              <div class="main-image">
+                <img src="images/point_cloud_1.webp" alt="Exemple de modèle 3D">
+              </div>
+              <div class="gallery-grid">
+                <div class="gallery-item">
+                  <img src="images/point_cloud_1.webp" alt="Exemple de modèle 3D" onclick="changeMainImage(this.src)">
+                </div>
+                <div class="gallery-item">
+                  <img src="images/unity.webp" alt="app unity" onclick="changeMainImage(this.src)">
+                </div>
+                <div class="gallery-item">
+                  <img src="images/apprc1.PNG" alt="app flutter" onclick="changeMainImage(this.src)">
+                </div>
+                <div class="gallery-item">
+                  <img src="images/apprc2.PNG" alt="app flutter" onclick="changeMainImage(this.src)">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="section">
+            <div class="section-header">
+              <h2 class="section-title">Autres projets</h2>
+            </div>
+            <div class="projects-grid2">
+              <div class="card project-card">
+                <div class="project-image">
+                  <img src="images/MobCoinMain.PNG" alt="Portfolio Personnel">
+                </div>
+                <div class="card-header">
+                  <h3 class="card-title">MobCoin</h3>
+                  <p class="card-description">Une application de suivi d'actions financières.</p>
+                </div>
+                <div class="card-content">
+                  <div class="tech-badges small">
+                    <span class="badge secondary">Android</span>
+                    <span class="badge secondary">Kotlin</span>
+                    <span class="badge secondary">SQL</span>
+                    <span class="badge secondary">CI/CD</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="mobcoin.html" class="button primary">Voir le projet</a>
+                </div>
+              </div>
+              
+              <div class="card project-card">
+                <div class="project-image">
+                  <img src="images/mahjongCMain.PNG" alt="Gestionnaire de Tâches">
+                </div>
+                <div class="card-header">
+                  <h3 class="card-title">MahJong Calculator</h3>
+                  <p class="card-description">Calculateur de scores de MahJong depuis des images.</p>
+                </div>
+                <div class="card-content">
+                  <div class="tech-badges small">
+                    <span class="badge secondary">Java</span>
+                    <span class="badge secondary">Javascript</span>
+                    <span class="badge secondary">OpenCV</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="mahjong.html" class="button primary">Voir le projet</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+          <p class="copyright">
+            © <span id="current-year"></span> Caron Maxence. Tous droits réservés.
+          </p>
+          <nav class="footer-nav">
+            <a href="about.html" class="footer-link">À propos</a>
+            <a href="maxence.caron04@gmail.com" class="footer-link">Contact</a>
+          </nav>
+        </div>
+      </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>
+    function changeMainImage(src) {
+      document.querySelector('.main-image img').src = src;
+    }
+    
+    // Set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

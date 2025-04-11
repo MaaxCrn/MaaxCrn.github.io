@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahjong Calculator</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="site-wrapper">
+    <header class="header">
+      <div class="container header-container">
+        <a href="index.html" class="logo">Portfolio</a>
+        <nav class="desktop-nav">
+          <a href="index.html" class="nav-link">Accueil</a>
+          <a href="about.html" class="nav-link">À propos</a>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">
+            <i class="fas fa-sun sun-icon"></i>
+            <i class="fas fa-moon moon-icon"></i>
+          </button>
+        </nav>
+        <button class="mobile-menu-button" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <a href="index.html" class="back-link">
+            <i class="fas fa-arrow-left"></i> Retour à l'accueil
+          </a>
+          
+          <div class="project-detail">
+            <div class="project-info">
+                <h1 class="project-title">MahJong Calculator</h1>
+                <div class="tech-badges mb-4">
+                <span class="badge">JavaScript</span>
+                <span class="badge">Java</span>
+                <span class="badge">OpenCV</span>
+                <span class="badge">Drag & Drop</span>
+                <span class="badge">REST API</span>
+                </div>
+
+                <div class="project-section">
+                <h2 class="project-section-title">Description du projet</h2>
+                <p class="project-description">
+                    MahJong Calculator est une application web permettant de reconnaître automatiquement les tuiles d'une main de MahJong à partir d’une photo, puis de calculer son score selon les règles officielles du jeu. Ce projet mêle vision par ordinateur, interface utilisateur interactive et logique métier complexe.
+                </p>
+                <p class="project-description">
+                    Le frontend est développé en JavaScript et offre une interface fluide avec <strong>drag & drop</strong> pour organiser les tuiles détectées ou en choisir manuellement. Le backend en Java gère la logique du jeu, le traitement des données, et communique avec une API REST.
+                </p>
+                </div>
+
+                <div class="project-section">
+                <h2 class="project-section-title">Fonctionnalités principales</h2>
+                <ul class="project-features">
+                    <li>Upload d'une image contenant une main de MahJong</li>
+                    <li>Détection automatique des tuiles avec OpenCV</li>
+                    <li>Affichage visuel des tuiles reconnues</li>
+                    <li>Éditeur manuel de la main avec glisser-déposer</li>
+                    <li>Calcul détaillé du score et des combinaisons détectées</li>
+                    <li>API REST pour le traitement des requêtes côté serveur</li>
+                </ul>
+                </div>
+
+                <div class="project-section">
+                <h2 class="project-section-title">Défis et solutions</h2>
+                <p class="project-description">
+                    Le plus grand défi a été la reconnaissance d'image avec OpenCV, notamment l’identification précise de chaque tuile dans des conditions de lumière variées. Nous avons utilisé des techniques de traitement d'image et de matching de contours pour améliorer la robustesse du système.
+                </p>
+                <p class="project-description">
+                    Côté frontend, l’interface de sélection manuelle avec glisser-déposer a été conçue pour être intuitive et accessible, permettant à l’utilisateur de corriger ou compléter la détection automatique si nécessaire.
+                </p>
+                </div>
+
+            
+
+            </div>
+            
+            <div class="project-gallery">
+              <div class="main-image">
+                <img src="images/mahjongCMain.PNG" alt="mahjong main">
+              </div>
+              <div class="gallery-grid">
+                <div class="gallery-item">
+                  <img src="images/mahjongCMain.PNG" alt="mahjong main" onclick="changeMainImage(this.src)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/mahjongaffiche.PNG" alt="mahjong affiche" onclick="changeMainImage(this.src)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/mahjongScore.PNG" alt="mahjong score" onclick="changeMainImage(this.src)">
+                </div>
+                <div class="gallery-item">
+                  <img src="images/mahjongRegles.PNG" alt="mahjong regles" onclick="changeMainImage(this.src)">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="section">
+            <div class="section-header">
+              <h2 class="section-title">Autres projets</h2>
+            </div>
+            <div class="projects-grid2">
+              <div class="card project-card">
+                <div class="project-image">
+                  <img src="images/MobCoinMain.PNG" alt="Portfolio Personnel">
+                </div>
+                <div class="card-header">
+                  <h3 class="card-title">MobCoin</h3>
+                  <p class="card-description">Une application de suivi d'actions financières.</p>
+                </div>
+                <div class="card-content">
+                  <div class="tech-badges small">
+                    <span class="badge secondary">Android</span>
+                    <span class="badge secondary">Kotlin</span>
+                    <span class="badge secondary">SQL</span>
+                    <span class="badge secondary">CI/CD</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="mobcoin.html" class="button primary">Voir le projet</a>
+                </div>
+              </div>
+              
+              <div class="card project-card">
+                <div class="project-image">
+                  <img src="images/point_cloud_1.webp" alt="Portfolio Personnel">
+                </div>
+                <div class="card-header">
+                  <h3 class="card-title">Reality Clone</h3>
+                  <p class="card-description">Pipeline de création de modèles 3D grace au Gaussian Splatting.</p>
+                </div>
+                <div class="card-content">
+                  <div class="tech-badges small">
+                    <span class="badge secondary">TypeScript</span>
+                    <span class="badge secondary">Gaussian Splatting</span>
+                    <span class="badge secondary">C#</span>
+                    <span class="badge secondary">Flutter</span>
+                    <span class="badge secondary">Unity</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="realityclone.html" class="button primary">Voir le projet</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+          <p class="copyright">
+            © <span id="current-year"></span> Caron Maxence. Tous droits réservés.
+          </p>
+          <nav class="footer-nav">
+            <a href="about.html" class="footer-link">À propos</a>
+            <a href="maxence.caron04@gmail.com" class="footer-link">Contact</a>
+          </nav>
+        </div>
+      </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>
+    function changeMainImage(src) {
+      document.querySelector('.main-image img').src = src;
+    }
+    
+    // Set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

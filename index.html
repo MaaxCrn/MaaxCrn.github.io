@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="site-wrapper">
+    <header class="header">
+      <div class="container header-container">
+        <a href="index.html" class="logo">Portfolio</a>
+        <nav class="desktop-nav">
+          <a href="index.html" class="nav-link">Accueil</a>
+          <a href="about.html" class="nav-link">À propos</a>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">
+            <i class="fas fa-sun sun-icon"></i>
+            <i class="fas fa-moon moon-icon"></i>
+          </button>
+        </nav>
+        <button class="mobile-menu-button" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <h1 class="hero-title">
+          Bonjour, je suis <span class="text-primary">Maxence Caron</span>
+        </h1>
+        <p class="hero-subtitle">
+          Développeur Junior, étudiant à l'IUT LYON 1.
+        </p>
+        <div class="button-group">
+          <a href="about.html" class="button primary">En savoir plus</a>
+          <a href="#projects" class="button outline" id="voirMesProjets">Voir mes projets</a>
+        </div>
+      </section>
+
+      <!-- Technologies Section -->
+      <section class="section">
+        <h2 class="section-title">Mes Technologies</h2>
+        <div class="tech-badges">
+          <span class="badge">Java</span>
+          <span class="badge">TypeScript</span>
+          <span class="badge">JavaScript</span>
+          <span class="badge">Vue.js</span>
+          <span class="badge">SpringBoot</span>
+          <span class="badge">SpringBatch</span>
+          <span class="badge">C/C++/C#</span>
+          <span class="badge">Kotlin</span>
+          <span class="badge">Flutter</span>
+          <span class="badge">SQL</span>
+          <span class="badge">PostgreSQL</span>
+          <span class="badge">Oracle</span>
+          <span class="badge">Git</span>
+        </div>
+      </section>
+
+      <!-- Projects Preview Section -->
+      <section class="section">
+        <div class="section-header" id="projetsRecents">
+          <h2 class="section-title">Mes projets</h2>
+        </div>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="card project-card">
+            <div class="project-image">
+              <img src="images/MobCoinMain.PNG" alt="mobcoin App">
+            </div>
+            <div class="card-header">
+              <h3 class="card-title">MobCoin</h3>
+              <p class="card-description">Une application de suivi d'actions financières.</p>
+            </div>
+            <div class="card-content">
+              <div class="tech-badges small">
+                <span class="badge secondary">Android</span>
+                <span class="badge secondary">Kotlin</span>
+                <span class="badge secondary">SQL</span>
+                <span class="badge secondary">CI/CD</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="mobcoin.html" class="button primary">Voir le projet</a>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="card project-card">
+            <div class="project-image">
+              <img src="images/point_cloud_1.webp" alt="Portfolio Personnel">
+            </div>
+            <div class="card-header">
+              <h3 class="card-title">Reality Clone</h3>
+              <p class="card-description">Pipeline de création de modèles 3D grace au Gaussian Splatting.</p>
+            </div>
+            <div class="card-content">
+              <div class="tech-badges small">
+                <span class="badge secondary">TypeScript</span>
+                <span class="badge secondary">Gaussian Splatting</span>
+                <span class="badge secondary">C#</span>
+                <span class="badge secondary">Flutter</span>
+                <span class="badge secondary">Unity</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="realityclone.html" class="button primary">Voir le projet</a>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="card project-card">
+            <div class="project-image">
+              <img src="images/mahjongCMain.PNG" alt="Gestionnaire de Tâches">
+            </div>
+            <div class="card-header">
+              <h3 class="card-title">MahJong Calculator</h3>
+              <p class="card-description">Calculateur de scores de MahJong depuis des images.</p>
+            </div>
+            <div class="card-content">
+              <div class="tech-badges small">
+                <span class="badge secondary">Java</span>
+                <span class="badge secondary">Javascript</span>
+                <span class="badge secondary">OpenCV</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="mahjong.html" class="button primary">Voir le projet</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section contact-section">
+        <h2 class="section-title">N'hésitez pas à me contacter.</h2>
+        <div class="social-links">
+          <a href="https://github.com/MaaxCrn" target="_blank" rel="noopener noreferrer" class="social-button">
+            <i class="fab fa-github"></i>
+            <span class="sr-only">GitHub</span>
+          </a>
+          <a href="https://linkedin.com/in/maxence-caron-7b60902a2/" target="_blank" rel="noopener noreferrer" class="social-button">
+            <i class="fab fa-linkedin-in"></i>
+            <span class="sr-only">LinkedIn</span>
+          </a>
+          <a href="mailto:maxence.caron04@gmail.com" class="social-button">
+            <i class="fas fa-envelope"></i>
+            <span class="sr-only">Email</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <p class="copyright">
+          © <span id="current-year"></span> Caron Maxence. Tous droits réservés.
+        </p>
+        <nav class="footer-nav">
+          <a href="about.html" class="footer-link">À propos</a>
+          <a href="maxence.caron04@gmail.com" class="footer-link">Contact</a>
+        </nav>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobcoin</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="site-wrapper">
+    <header class="header">
+      <div class="container header-container">
+        <a href="index.html" class="logo">Portfolio</a>
+        <nav class="desktop-nav">
+          <a href="index.html" class="nav-link">Accueil</a>
+          <a href="about.html" class="nav-link">À propos</a>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">
+            <i class="fas fa-sun sun-icon"></i>
+            <i class="fas fa-moon moon-icon"></i>
+          </button>
+        </nav>
+        <button class="mobile-menu-button" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <a href="index.html" class="back-link">
+            <i class="fas fa-arrow-left"></i> Retour à l'accueil
+          </a>
+          
+          <div class="project-detail">
+            <div class="project-info">
+              <h1 class="project-title">MobCoin</h1>
+              <div class="tech-badges mb-4">
+                <span class="badge">Android</span>
+                <span class="badge">Kotlin</span>
+                <span class="badge">SQL</span>
+                <span class="badge">CI/CD</span>
+                <span class="badge">ROOM</span>
+                <span class="badge">API REST</span>
+              </div>
+              
+              <div class="project-section">
+                <h2 class="project-section-title">Description du projet</h2>
+                <p class="project-description">
+                  MobCoin est une application mobile Android de suivi et de visualisation de données financières liées aux cryptomonnaies. Conçue en équipe de trois, elle permet aux utilisateurs de rechercher des cryptomonnaies, d'afficher leur évolution sous forme de courbes interactives, de consulter les plateformes d’échange disponibles, de gérer un portefeuille personnalisé, et de sauvegarder leurs coins favoris.
+                </p>
+                <p class="project-description">
+                  Le développement a suivi une méthodologie agile avec Trello pour la gestion des tâches, Figma pour la conception des maquettes, et Git pour le versioning. Le projet intègre également une base de données locale via Room (SQL) et un pipeline CI/CD pour automatiser les builds et les tests.
+                </p>
+              </div>
+              
+              <div class="project-section">
+                <h2 class="project-section-title">Fonctionnalités principales</h2>
+                <ul class="project-features">
+                  <li>Recherche de cryptomonnaies avec auto-complétion</li>
+                  <li>Visualisation de courbes d’évolution des prix</li>
+                  <li>Affichage des plateformes d’échange associées</li>
+                  <li>Ajout et gestion des coins favoris</li>
+                  <li>Création de compte utilisateur et authentification</li>
+                  <li>Suivi d’un portefeuille personnalisé</li>
+                  <li>Stockage local avec Room Database</li>
+                  <li>CI/CD pour automatiser les builds et les tests</li>
+                </ul>
+              </div>
+              
+              <div class="project-section">
+                <h2 class="project-section-title">Défis et solutions</h2>
+                <p class="project-description">
+                  Un des défis majeurs a été la gestion de la synchronisation entre les données en ligne et la base de données locale. Nous avons mis en place un système hybride combinant les API REST et Room afin de garantir la fluidité et la cohérence des données, même hors connexion.
+                </p>
+                <p class="project-description">
+                  De plus, nous avons automatisé notre processus de développement grâce à un pipeline CI/CD qui vérifie et compile le code à chaque push, ce qui a permis d'assurer une qualité constante tout au long du projet.
+                </p>
+              </div>
+              
+              <div class="project-links">
+                <a href="https://github.com/MathisB2/MobCoin" target="_blank" class="button outline">
+                  <i class="fab fa-github"></i> Code source
+                </a>
+              </div>
+            </div>
+            
+            <div class="project-gallery">
+              <div class="main-image">
+                <img src="images/MobCoinMain.PNG" alt="MobCoin pages">
+              </div>
+              <div class="gallery-grid">
+                <div class="gallery-item">
+                  <img src="images/MobCoinMain.PNG" alt="MobCoin pages" onclick="changeMainImage(this.src)">
+                </div>
+                <div class="gallery-item">
+                  <img src="images/mobcoinportfolio.PNG" alt="MobCoin pages" onclick="changeMainImage(this.src)">
+                </div>
+                <div class="gallery-item">
+                  <img src="images/mobcoinnoirblanc.PNG" alt="MobCoin login" onclick="changeMainImage(this.src)">
+                </div>
+                <div class="gallery-item">
+                  <img src="images/mobcoinfigma.PNG" alt="MobCoin login" onclick="changeMainImage(this.src)">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="section">
+            <div class="section-header">
+              <h2 class="section-title">Autres projets</h2>
+            </div>
+            <div class="projects-grid2">
+              <div class="card project-card">
+                <div class="project-image">
+                  <img src="images/point_cloud_1.webp" alt="Portfolio Personnel">
+                </div>
+                <div class="card-header">
+                  <h3 class="card-title">Reality Clone</h3>
+                  <p class="card-description">Pipeline de création de modèles 3D grace au Gaussian Splatting.</p>
+                </div>
+                <div class="card-content">
+                  <div class="tech-badges small">
+                    <span class="badge secondary">TypeScript</span>
+                    <span class="badge secondary">Gaussian Splatting</span>
+                    <span class="badge secondary">C#</span>
+                    <span class="badge secondary">Flutter</span>
+                    <span class="badge secondary">Unity</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="realityclone.html" class="button primary">Voir le projet</a>
+                </div>
+              </div>
+              
+              <div class="card project-card">
+                <div class="project-image">
+                  <img src="images/mahjongCMain.PNG" alt="Gestionnaire de Tâches">
+                </div>
+                <div class="card-header">
+                  <h3 class="card-title">MahJong Calculator</h3>
+                  <p class="card-description">Calculateur de scores de MahJong depuis des images.</p>
+                </div>
+                <div class="card-content">
+                  <div class="tech-badges small">
+                    <span class="badge secondary">Java</span>
+                    <span class="badge secondary">Javascript</span>
+                    <span class="badge secondary">OpenCV</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="mahjong.html" class="button primary">Voir le projet</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <p class="copyright">
+          © <span id="current-year"></span> Caron Maxence. Tous droits réservés.
+        </p>
+        <nav class="footer-nav">
+          <a href="about.html" class="footer-link">À propos</a>
+          <a href="maxence.caron04@gmail.com" class="footer-link">Contact</a>
+        </nav>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>
+    function changeMainImage(src) {
+      document.querySelector('.main-image img').src = src;
+    }
+    
+    // Set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
